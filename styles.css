@@ -1,0 +1,22 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.username {
+  font-size: 32px;
+  margin: 25px 0;
+}
+
+.divider {
+  border-top: 2px solid #000;
+}
