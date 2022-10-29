@@ -12,6 +12,16 @@ td {
   margin: 0 auto;
 }
 
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-photo {
+  width: 140px;
+  height: 140px;
+}
+
 .username {
   font-size: 32px;
   margin: 25px 0;
