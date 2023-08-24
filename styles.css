@@ -7,9 +7,16 @@ td {
   padding: 10px;
 }
 
+body {
+  font-family: 'arial';
+  background-color: #ccc;
+}
+
 .wrapper {
   width: 800px;
   margin: 0 auto;
+  padding: 40px;
+  background-color: white;
 }
 
 .header-wrapper {
@@ -17,14 +24,32 @@ td {
   justify-content: space-between;
 }
 
+.username-en {
+  color: #5d6163;
+}
+
 .user-photo {
   width: 140px;
   height: 140px;
 }
 
+.contact {
+  margin-top: 15px;
+}
+
 .username {
   font-size: 32px;
-  margin: 25px 0;
+}
+
+.title {
+  background-color: #676a6e;
+  color: white;
+  padding: 5px 0 5px 5px;
+  line-height: 1;
+}
+
+.projects-table {
+  margin: 10px 0;
 }
 
 .divider {
