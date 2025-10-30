@@ -59,20 +59,23 @@ body {
 .work-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 12px; /* расстояние между фото */
-  margin-top: 8px;
-  margin-bottom: 20px;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0 20px 0;
 }
 
 .work-images img {
-  width: 432px;         /* ширина ~4.5 дюйма */
-  height: 874px;        /* высота ~9.1 дюйма */
-  object-fit: cover;    /* фото обрезается по рамке без искажений */
-  border: 2px solid #ccc;
+  width: 175px;          /* ширина в 4 раза меньше */
+  height: 100px;         /* фиксированная высота */
+  object-fit: cover;     /* фото остаются чёткими и не искажаются */
+  border: 1px solid #aaa;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  image-rendering: -webkit-optimize-contrast; /* делает фото четче */
-  image-rendering: crisp-edges;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease;
 }
+
+.work-images img:hover {
+  transform: scale(1.1); /* небольшое увеличение при наведении */
+}
+
 
