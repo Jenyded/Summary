@@ -74,8 +74,8 @@ body {
 
 /* Сами изображения */
 .work-images img {
-  width: 52px;            
-  height: 104px;          
+  width: 73px;            
+  height: 146px;          
   object-fit: cover;
   border: 1px solid #aaa;
   border-radius: 4px;
