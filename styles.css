@@ -56,14 +56,23 @@ body {
   border-top: 2px solid #000;
 }
 /* === ОПЫТ РАБОТЫ: ФОТО 4 В РЯД === */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Контейнер с изображениями */
 .work-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Выровнять по левому краю */
-  gap: 8px;
+  justify-content: flex-start; /* выравнивание по левому краю */
+  align-items: flex-start; /* по верхнему краю */
+  gap: 8px; 
   margin: 12px 0 20px 0;
+  padding: 0;
 }
 
+/* Сами изображения */
 .work-images img {
   width: 52px;            
   height: 104px;          
