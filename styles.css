@@ -55,3 +55,24 @@ body {
 .divider {
   border-top: 2px solid #000;
 }
+/* === ОПЫТ РАБОТЫ: ФОТО 4 В РЯД === */
+.work-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 12px; /* расстояние между фото */
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.work-images img {
+  width: 432px;         /* ширина ~4.5 дюйма */
+  height: 874px;        /* высота ~9.1 дюйма */
+  object-fit: cover;    /* фото обрезается по рамке без искажений */
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  image-rendering: -webkit-optimize-contrast; /* делает фото четче */
+  image-rendering: crisp-edges;
+}
+
