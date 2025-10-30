@@ -56,34 +56,36 @@ body {
   border-top: 2px solid #000;
 }
 /* === ОПЫТ РАБОТЫ: ФОТО 4 В РЯД === */
+/* Сброс отступов и паддингов страницы */
 body {
   margin: 0;
   padding: 0;
 }
 
-/* Контейнер с изображениями */
+/* Контейнер для группы изображений */
 .work-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start; /* выравнивание по левому краю */
-  align-items: flex-start; /* по верхнему краю */
-  gap: 8px; 
-  margin: 12px 0 20px 0;
-  padding: 0;
+  display: flex;                 /* Используем flex для горизонтального расположения */
+  flex-wrap: wrap;               /* Позволяем переносить на новые строки */
+  justify-content: flex-start;   /* Выровнять элементы по левому краю */
+  align-items: flex-start;       /* Выровнять по верхнему краю */
+  gap: 8px;                      /* Расстояние между изображениями */
+  margin: 12px 0 20px 0;         /* Внешние отступы сверху и снизу */
+  padding: 0;                    /* Убираем внутренние отступы */
 }
 
-/* Сами изображения */
+/* Стили самих изображений */
 .work-images img {
-  width: 73px;            
-  height: 146px;          
-  object-fit: cover;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  width: 73px;                   /* Ширина изображения */
+  height: 146px;                 /* Высота изображения */
+  object-fit: cover;             /* Кадрирование содержимого */
+  border: 1px solid #aaa;        /* Граница вокруг изображения */
+  border-radius: 4px;            /* Скругление углов */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25); /* Тень */
+  transition: transform 0.25s ease, box-shadow 0.25s ease; /* Плавные эффекты при наведении */
 }
 
+/* Эффект при наведении */
 .work-images img:hover {
-  transform: scale(1.15);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+  transform: scale(1.15);        /* Увеличение изображения */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.35); /* Усиленная тень */
 }
