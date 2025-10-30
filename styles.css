@@ -59,14 +59,14 @@ body {
 .work-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end; /* Выровнять по правому краю */
   gap: 8px;
   margin: 12px 0 20px 0;
 }
 
 .work-images img {
-  width: 52px;            /* уменьшено  */
-  height: 104px;          /* сохраняем пропорции Unity (1:2) */
+  width: 52px;            
+  height: 104px;          
   object-fit: cover;
   border: 1px solid #aaa;
   border-radius: 4px;
