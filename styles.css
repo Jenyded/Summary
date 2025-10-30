@@ -75,8 +75,8 @@ body {
 
 /* Изображения */
 .work-images img {
-  width: 73px;           /* увеличенные размеры */
-  height: 146px;
+  width: 88px;           /* увеличенные размеры */
+  height: 175px;
   object-fit: cover;
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -90,3 +90,4 @@ body {
   transform: scale(1.15); /* дополнительно увеличиваем при наведении */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
 }
+
