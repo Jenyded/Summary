@@ -75,19 +75,18 @@ body {
 
 /* Изображения */
 .work-images img {
-  width: 88px;           /* увеличенные размеры */
-  height: 175px;
+  width: 88px !important;     /* увеличенные на 20% размеры */
+  height: 175px !important;
   object-fit: cover;
   border: 1px solid #aaa;
   border-radius: 4px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  flex-shrink: 0;        /* чтобы flex не уменьшал размер */
+  flex-shrink: 0 !important;  /* чтобы flex не уменьшал размер */
 }
 
 /* Hover-эффект */
 .work-images img:hover {
-  transform: scale(1.15); /* дополнительно увеличиваем при наведении */
+  transform: scale(1.15);     /* дополнительно увеличиваем при наведении */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
 }
-
