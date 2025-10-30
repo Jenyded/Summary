@@ -60,22 +60,21 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
-  margin: 10px 0 20px 0;
+  gap: 10px;
+  margin: 15px 0 25px 0;
 }
 
 .work-images img {
-  width: 175px;          /* ширина в 4 раза меньше */
-  height: 100px;         /* фиксированная высота */
-  object-fit: cover;     /* фото остаются чёткими и не искажаются */
-  border: 1px solid #aaa;
+  width: 135px;           /* уменьшенная ширина, сохраняет вертикальные пропорции */
+  height: 270px;          /* ровно 1:2 как экран Unity 1080x2160 */
+  object-fit: cover;      /* изображение не искажается, аккуратно обрезается */
+  border: 1px solid #999;
   border-radius: 6px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.25s ease;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .work-images img:hover {
-  transform: scale(1.1); /* небольшое увеличение при наведении */
+  transform: scale(1.08);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
 }
-
-
