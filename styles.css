@@ -59,7 +59,7 @@ body {
 .work-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end; /* Выровнять по правому краю */
+  justify-content: flex-start; /* Выровнять по левому краю */
   gap: 8px;
   margin: 12px 0 20px 0;
 }
